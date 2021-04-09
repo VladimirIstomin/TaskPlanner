@@ -1,0 +1,22 @@
+<%- include("header") -%>
+
+<div class="content-container planner-type">
+    <h1><%= plannerType %></h1>
+</div>
+
+<div class="content-container tasks">
+    <ul class="tasks-list">
+        <% for (task of tasks) { %>
+            <input class="complete-task el" type="checkbox">
+            <li class="task el"><%= task %></li>
+        <% } %>
+    </ul>
+
+    <form class="task-input-form" action="/" method="POST">
+        <input class="new-task-input" type="text" name="task" placeholder="New task" autocomplete="off" autofocus>
+        <button class="btn" type="submit" name="addTask" value=<%= plannerType %>>+</button>
+    </form>
+</div>
+
+
+<%- include("footer") -%>
