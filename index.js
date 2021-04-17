@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 // Mongodb configuration
 
-mongoose.connect('mongodb+srv://vladimiristomin:HigherSchool2020!@todolist.xpdaq.mongodb.net/Tasks?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
+mongoose.connect('mongodb+srv://vladimiristomin:<Password>@todolist.xpdaq.mongodb.net/Tasks?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
 
 const taskSchema = mongoose.Schema({
     name: String
